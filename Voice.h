@@ -21,7 +21,7 @@
 *
 *    @return 0失败，1成功
 */
-+ (int)Start:(NSString *)file;
++ (int)Start:(nonnull NSString *)file;
 
 /*
 *    停止录音和播放
@@ -36,7 +36,7 @@
 *
 *    @return 0失败，1成功
 */
-+ (int)Play:(NSString *)file;
++ (int)Play:(nonnull NSString *)file;
 
 /*
 *    是否播放中
@@ -66,7 +66,7 @@
 *
 *    @return 文件大小, -1失败
 */
-+ (unsigned long long)GetFileSize:(NSString *)filePath;
++ (unsigned long long)GetFileSize:(nonnull NSString *)filePath;
 
 /*
     重命名文件
@@ -86,7 +86,7 @@
 *
 *    @return 0失败，1成功
 */
-+ (int)WAV2AMR:(NSString *)wavFile amr:(NSString *)amrFile;
++ (int)WAV2AMR:(nonnull NSString *)wavFile amr:(nonnull NSString *)amrFile;
 
 /*
 *    amr文件转换为wav文件
@@ -96,7 +96,7 @@
 *
 *    @return 0失败，1成功
 */
-+ (int)AMR2WAV:(NSString *)amrFile wav:(NSString *)wavFile;
++ (int)AMR2WAV:(nonnull NSString *)amrFile wav:(nonnull NSString *)wavFile;
 
 @end
 #endif /* Voice_h */
